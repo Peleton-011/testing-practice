@@ -1,5 +1,9 @@
 import functions from "./functions";
 
-it("Sample", () => {
-	expect(functions.example()).toBe("example");
+it("Capitalize 1", () => {
+	expect(functions.capitalize("asdf")).toBe("Asdf");
+});
+
+it("Capitalize 2", () => {
+	expect(functions.capitalize("ASDF")).toBe("ASDF");
 });
