@@ -17,3 +17,28 @@ it("Reverse String 1", () => {
 it("Reverse String 2", () => {
 	expect(functions.reverseString("ASDF")).toBe("FDSA");
 });
+
+//A calculator object
+it("Calculator Add 1", () => {
+	expect(functions.calculator.add("asdf")).toBe("fdsa");
+});
+
+it("Calculator Add 2", () => {
+	expect(functions.calculator.add("ASDF")).toBe("FDSA");
+});
+
+it("Calculator Subtract", () => {
+	expect(functions.calculator.subtract("asdf")).toBe("fdsa");
+});
+
+it("Calculator Multiply", () => {
+	expect(functions.calculator.multiply("asdf")).toBe("fdsa");
+});
+
+it("Calculator Divide 1", () => {
+	expect(functions.calculator.divide("ASDF")).toBe("FDSA");
+});
+
+it("Calculator Divide 2", () => {
+	expect(functions.calculator.divide("ASDF")).toBe("FDSA");
+});

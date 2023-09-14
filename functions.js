@@ -8,7 +8,17 @@ export default {
 				""
 			);
 	},
-    reverseString(input) {
-        return input.split("").reverse().join("")
-    }
+	reverseString(input) {
+		return input.split("").reverse().join("");
+	},
+	calculator: {
+		add(input) {},
+		subtract(input) {},
+		multiply(input) {},
+		divide(input) {},
+
+		_curateInput(input) {
+			return input.map((e) => Number(e)).filter((e) => typeof e === "number");
+		},
+	},
 };
