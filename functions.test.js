@@ -64,7 +64,7 @@ it("Caesar Cipher 1", () => {
 });
 
 it("Caesar Cipher 2", () => {
-	expect(functions.caesarCipher("boobs", 3)).toBe("errew");
+	expect(functions.caesarCipher("boobs", 3)).toBe("errev");
 });
 
 it("Caesar Cipher Wrapping", () => {

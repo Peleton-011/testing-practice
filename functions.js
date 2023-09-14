@@ -44,4 +44,27 @@ export default {
 				.map((e) => Number(e));
 		},
 	},
+	caesarCipher(input, offset) {
+		const minLow = "a".charCodeAt(0);
+		const maxLow = "z".charCodeAt(0);
+		const minUpp = "A".charCodeAt(0);
+		const maxUpp = "Z".charCodeAt(0);
+		return input
+			.split("")
+			.map((char) => {
+				let code = char.charCodeAt(0);
+				if (code >= minUpp && code <= maxUpp) {
+					code += offset;
+					if (code > maxUpp) code -= 26;
+					if (code < minUpp) code += 26;
+				}
+				if (code >= minLow && code <= maxLow) {
+					code += offset;
+					if (code > maxLow) code -= 26;
+					if (code < minLow) code += 26;
+				}
+				return String.fromCharCode(code);
+			})
+			.join("");
+	},
 };
