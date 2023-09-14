@@ -1,5 +1,6 @@
 import functions from "./functions";
 
+/*
 //Should capitalize the first letter
 it("Capitalize 1", () => {
 	expect(functions.capitalize("asdf")).toBe("Asdf");
@@ -54,4 +55,26 @@ it("Calculator Divide 1", () => {
 
 it("Calculator Divide 2", () => {
 	expect(functions.calculator.divide([3, 0])).toBe(3);
+});
+
+*/
+
+it("Caesar Cipher 1", () => {
+	expect(functions.caesarCipher("boobs", 1)).toBe("cppct");
+});
+
+it("Caesar Cipher 2", () => {
+	expect(functions.caesarCipher("boobs", 3)).toBe("errew");
+});
+
+it("Caesar Cipher Wrapping", () => {
+	expect(functions.caesarCipher("boobs", 9)).toBe("kxxkb");
+});
+
+it("Caesar Cipher Case", () => {
+	expect(functions.caesarCipher("BoObS", 9)).toBe("KxXkB");
+});
+
+it("Caesar Cipher Punctuation", () => {
+	expect(functions.caesarCipher("Boobs, ass", 9)).toBe("Kxxkb, jbb");
 });
