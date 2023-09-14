@@ -1,6 +1,5 @@
 import functions from "./functions";
 
-/*
 //Should capitalize the first letter
 it("Capitalize 1", () => {
 	expect(functions.capitalize("asdf")).toBe("Asdf");
@@ -22,7 +21,9 @@ it("Reverse String 2", () => {
 //A calculator object
 
 it("Calculator Curate Input", () => {
-	expect(functions.calculator._curateInput(["a", 4, "5"])).toStrictEqual([4, 5]);
+	expect(functions.calculator._curateInput(["a", 4, "5"])).toStrictEqual([
+		4, 5,
+	]);
 });
 
 it("Calculator Add 1", () => {
@@ -76,7 +77,6 @@ it("Caesar Cipher Case", () => {
 it("Caesar Cipher Punctuation", () => {
 	expect(functions.caesarCipher("Boobs, ass", 9)).toBe("Kxxkb, jbb");
 });
-*/
 
 it("Analyze Array Average", () => {
 	expect(functions.analyzeArray([1, 8, 3, 4, 2, 6]).average).toBe(4);
