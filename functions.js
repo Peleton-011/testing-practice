@@ -67,5 +67,31 @@ export default {
 			})
 			.join("");
 	},
-	analyzeArray(arr) {},
+	analyzeArray(arr) {
+		function average(arr) {
+			const newArr = _curateInput(arr);
+			return newArr.reduce((acc, curr) => acc + curr, 0) / newArr.length;
+		}
+		function min(arr) {
+			return _curateInput(arr).sort()[0];
+		}
+		function max(arr) {
+			return _curateInput(arr).sort().reverse()[0];
+		}
+		function length(arr) {
+			return _curateInput(arr).length;
+		}
+		function _curateInput(input) {
+			return input
+				.filter((e) => !isNaN(parseFloat(e)) && isFinite(e))
+				.map((e) => Number(e));
+		}
+
+		return {
+			average: average(arr),
+			min: min(arr),
+			max: max(arr),
+			length: length(arr),
+		};
+	},
 };
