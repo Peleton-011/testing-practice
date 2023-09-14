@@ -24,8 +24,19 @@ export default {
 				0
 			);
 		},
-		multiply(input) {},
-		divide(input) {},
+		multiply(input) {
+			return this._curateInput(input).reduce(
+				(acc, curr) => acc * curr,
+				1
+			);
+		},
+		divide(input) {
+			return this._curateInput(input).reduce(
+				(acc, curr, i) =>
+					i > 0 ? (curr === 0 ? acc / 1 : acc / curr) : acc + curr,
+				0
+			);
+		},
 
 		_curateInput(input) {
 			return input
