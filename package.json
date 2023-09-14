@@ -1,11 +1,18 @@
 {
-  "name": "testing-practice",
-  "version": "1.0.0",
-  "description": "A practice project on testing with Jest",
-  "main": "functions.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+	"name": "testing-practice",
+	"version": "1.0.0",
+	"description": "A practice project on testing with Jest",
+	"main": "functions.js",
+	"scripts": {
+		"test": "jest",
+		"watch": "jest --watch *.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.22.17",
+		"@babel/preset-env": "^7.22.15",
+		"babel-jest": "^29.7.0",
+		"jest": "^29.7.0"
+	}
 }
