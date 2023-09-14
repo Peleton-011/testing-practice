@@ -18,7 +18,12 @@ export default {
 				0
 			);
 		},
-		subtract(input) {},
+		subtract(input) {
+			return this._curateInput(input).reduce(
+				(acc, curr, i) => (i > 0 ? acc - curr : acc + curr),
+				0
+			);
+		},
 		multiply(input) {},
 		divide(input) {},
 
