@@ -57,8 +57,6 @@ it("Calculator Divide 2", () => {
 	expect(functions.calculator.divide([3, 0])).toBe(3);
 });
 
-*/
-
 it("Caesar Cipher 1", () => {
 	expect(functions.caesarCipher("boobs", 1)).toBe("cppct");
 });
@@ -78,3 +76,4 @@ it("Caesar Cipher Case", () => {
 it("Caesar Cipher Punctuation", () => {
 	expect(functions.caesarCipher("Boobs, ass", 9)).toBe("Kxxkb, jbb");
 });
+*/
