@@ -11,9 +11,9 @@ it("Capitalize 2", () => {
 
 //Takes a string and returns it reversed
 it("Reverse String 1", () => {
-	expect(functions.reverseString("asdf")).toBe("Asdf");
+	expect(functions.reverseString("asdf")).toBe("fdsa");
 });
 
 it("Reverse String 2", () => {
-	expect(functions.reverseString("ASDF")).toBe("ASDF");
+	expect(functions.reverseString("ASDF")).toBe("FDSA");
 });
