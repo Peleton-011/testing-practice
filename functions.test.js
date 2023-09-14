@@ -19,6 +19,11 @@ it("Reverse String 2", () => {
 });
 
 //A calculator object
+
+it("Calculator Curate Input", () => {
+	expect(functions.calculator._curateInput(["a", 4, "5"])).toStrictEqual([4, 5]);
+});
+
 it("Calculator Add 1", () => {
 	expect(functions.calculator.add([2, 4, 5])).toBe(11);
 });

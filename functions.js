@@ -12,13 +12,20 @@ export default {
 		return input.split("").reverse().join("");
 	},
 	calculator: {
-		add(input) {},
+		add(input) {
+			return this._curateInput(input).reduce(
+				(acc, curr) => acc + curr,
+				0
+			);
+		},
 		subtract(input) {},
 		multiply(input) {},
 		divide(input) {},
 
 		_curateInput(input) {
-			return input.map((e) => Number(e)).filter((e) => typeof e === "number");
+			return input
+				.filter((e) => !isNaN(parseFloat(e)) && isFinite(e))
+				.map((e) => Number(e));
 		},
 	},
 };
