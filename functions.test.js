@@ -20,25 +20,33 @@ it("Reverse String 2", () => {
 
 //A calculator object
 it("Calculator Add 1", () => {
-	expect(functions.calculator.add("asdf")).toBe("fdsa");
+	expect(functions.calculator.add([2, 4, 5])).toBe(11);
 });
 
 it("Calculator Add 2", () => {
-	expect(functions.calculator.add("ASDF")).toBe("FDSA");
+	expect(functions.calculator.add([2, 4, "5"])).toBe(11);
 });
 
-it("Calculator Subtract", () => {
-	expect(functions.calculator.subtract("asdf")).toBe("fdsa");
+it("Calculator Add 3", () => {
+	expect(functions.calculator.add(["a", 4, "5"])).toBe(9);
+});
+
+it("Calculator Subtract 1", () => {
+	expect(functions.calculator.subtract([10, 5])).toBe(5);
+});
+
+it("Calculator Subtract 2", () => {
+	expect(functions.calculator.subtract([10, 5, 3])).toBe(2);
 });
 
 it("Calculator Multiply", () => {
-	expect(functions.calculator.multiply("asdf")).toBe("fdsa");
+	expect(functions.calculator.multiply([3, 4])).toBe(12);
 });
 
 it("Calculator Divide 1", () => {
-	expect(functions.calculator.divide("ASDF")).toBe("FDSA");
+	expect(functions.calculator.divide([12, 3, 2])).toBe(2);
 });
 
 it("Calculator Divide 2", () => {
-	expect(functions.calculator.divide("ASDF")).toBe("FDSA");
+	expect(functions.calculator.divide([3, 0])).toBe(3);
 });
