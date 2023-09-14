@@ -77,3 +77,19 @@ it("Caesar Cipher Punctuation", () => {
 	expect(functions.caesarCipher("Boobs, ass", 9)).toBe("Kxxkb, jbb");
 });
 */
+
+it("Analyze Array Average", () => {
+	expect(functions.analyzeArray([1, 8, 3, 4, 2, 6]).average).toBe(4);
+});
+
+it("Analyze Array Min", () => {
+	expect(functions.analyzeArray([1, 8, 3, 4, 2, 6]).min).toBe(1);
+});
+
+it("Analyze Array Max", () => {
+	expect(functions.analyzeArray([1, 8, 3, 4, 2, 6]).max).toBe(8);
+});
+
+it("Analyze Array Length", () => {
+	expect(functions.analyzeArray([1, 8, 3, 4, 2, 6]).length).toBe(6);
+});

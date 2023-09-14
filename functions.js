@@ -67,5 +67,5 @@ export default {
 			})
 			.join("");
 	},
-	analyzeArrat(arr) {},
+	analyzeArray(arr) {},
 };
